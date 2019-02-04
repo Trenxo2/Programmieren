@@ -40,6 +40,8 @@ int main() {
 
 	printf("\nZahlenvergleich \n\n");
 
+
+	/*Zahleneingabe*/
 	printf("\nGeben Sie den 1. Wert ein: ");
 	scanf_s("%i", &a);
 
@@ -49,7 +51,7 @@ int main() {
 	printf("\nGeben Sie den 3. Wert ein: ");
 	scanf_s("%i", &c);
 
-
+	/*Falls Zahlen kleiner als 0 sein sollten*/
 	if (a < 0 || b < 0 || c < 0) {
 
 		printf("\nAlle Zahlen unter Null ergeben keine gueltige Eingabe!\n");
@@ -60,7 +62,7 @@ int main() {
 
 	}
 
-
+	/*1. Zahlenvergleich*/
 	if (a > b) {
 
 		neue_zeilen();
@@ -76,6 +78,7 @@ int main() {
 
 	}
 
+	/*2.Zahlenvergleich*/
 	if (a > c) {
 
 		neue_zeilen();
@@ -91,6 +94,7 @@ int main() {
 
 	}
 
+	/*3.Zahlenvergleich*/
 	if (c > b) {
 
 		neue_zeilen();
@@ -107,6 +111,8 @@ int main() {
 
 	}
 
+	/*Falls Zahlen gleich gross sind*/
+
 	if (a == b && a == c || b == a && b == c || c == a && c == b) {
 
 		neue_zeilen();
@@ -114,6 +120,7 @@ int main() {
 
 	}
 
+	/*
 	if (a == b && b == a) {
 
 		neue_zeilen();
@@ -135,7 +142,7 @@ int main() {
 		neue_zeilen();
 		
 	}
-
+	*/
 
 	printf("\nGeben Sie etwas ein um das Programm zu beenden: ");
 	scanf_s("%i", &eingabe);
