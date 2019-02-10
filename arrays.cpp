@@ -24,12 +24,12 @@ int main() {
 	double ptz_erg=1;
 
 	nz();
-	printf("\n1.Addition\n2.Potenzrechnung\n3.Jahreszeiten-erkenner");
+	printf("\n1.Addition\n2.Potenzrechnung\n3.Jahreszeiten-erkenner\n4.");
 	printf("\nWelches Programm moechten sie waehlen: ");
 
 	scanf_s("%i", &input_int[0]);
 
-	if (input_int[0] > 3) {
+	if (input_int[0] > 4) {
 
 		printf("\nDies ist keine gueltige eingabe!\n");
 
@@ -99,6 +99,7 @@ int main() {
 		
 		printf("\nGeben Sie als Zahl ein in welchem Monat Sie sich befinden: ");
 		scanf_s("%i", &input_int[2]);
+
 		nz();
 
 		/*Switch-Case Anweisung innerhalb eines cases*/
@@ -162,6 +163,14 @@ int main() {
 			break;
 		}
 		break;
+
+	case 4:
+
+		printf("\nDas ist das 4. Programm\n");
+
+		nz();
+
+
 
 
 	}

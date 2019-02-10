@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+/*Diese Funktion sorgt dafür das 4 mal eine neue, leere Zeile angezeigt wird*/
 int neue_zeile() {
 
 	int neue_z = 4;
